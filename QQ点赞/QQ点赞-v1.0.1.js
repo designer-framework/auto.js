@@ -89,13 +89,13 @@ while(true){
         var moreFriendBtn = className("android.widget.TextView").text("显示更多").findOne(600);
         if (!moreFriendBtn) {
             log("未发现[显示更多]按钮")
-            moveTop(0)
+            moveTop()
             //有显示更多的按钮则点击显示更多
         } else {
             log("发现[显示更多]按钮")
             moreFriendBtn.parent().click();
             sleep(100)
-            moveTop(-1)
+            moveTop()
         }
     }
 }
